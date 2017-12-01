@@ -1,0 +1,9 @@
+$primary-color:  #0079c1;
+
+.intro {
+  font-variant: all-small-caps;
+  color :$primary-color;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
