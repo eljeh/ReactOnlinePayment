@@ -21,17 +21,17 @@ const style = {
 class CreditCardNumber extends React.Component {
   render() {
     return (
-      <div id="credit-card-number" ref="parent" width='200px' className={styles.field}>
-      </div>
+      <div id="card-number" ref="parent" className={styles.field}></div>
     );
   }
 
   componentDidMount() {
-    const parent = ReactDOM.findDOMNode(this.refs.parent);
-    checkout.create('card-number', { style, brands })
-      .mount(`#${parent.id}`);
+    const host = ReactDOM.findDOMNode(this);
+    checkout
+      .create('card-number', { style, brands, placeholder: '**** **** **** ****' })
+      .mount(`#${host.id}`);
 
-    checkout.on('error', () => this.props.onError());
+    checkout.on('error', result => this.props.onError(result));
     checkout.on('complete', () => this.props.onComplete());
   }
 }

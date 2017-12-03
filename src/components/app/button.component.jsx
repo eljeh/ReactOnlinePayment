@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
-import className from 'classnames';
-
 
 const Button = props =>
   (
-    <button type="button" type={props.type} disabled={props.hasError} onClick={() => props.onClick()}>Get Token</button>
+    <button type="button" disabled={props.hasError} onClick={() => props.onClick()}>Get Token</button>
+    // <button id={props.id} type={props.type} className={props.className}>{props.text}</button>
   );
 
 Button.propType = {

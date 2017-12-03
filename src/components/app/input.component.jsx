@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AppInput = props =>
+const Input = props =>
     <input
         name={props.name}
         id={props.id}
@@ -10,4 +10,4 @@ const AppInput = props =>
         className={props.className}
      />;
 
-export default AppInput;
+export default Input;

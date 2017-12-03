@@ -5,7 +5,7 @@ module.exports = function (config) {
     browsers: ['PhantomJS'],
     frameworks: ['mocha', 'sinon-chai', 'phantomjs-shim'],
     reporters: ['spec', 'coverage'],
-    files: ['./index.js'],
+    files: ['https://libs.na.bambora.com/customcheckout/1/customcheckout.js', './index.js'],
     preprocessors: {
       './index.js': ['webpack', 'sourcemap']
     },
