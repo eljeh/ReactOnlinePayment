@@ -20,8 +20,11 @@ const App = (props) => {
   return (
     <div>
     <form id="payment-form">
+
       <div className="row form-field-wrapper">
+
         <div id="paymentInfo" className="large-12 column">
+
           <div id="feedback"></div>
 
           <div id="paymentTitle" className="large-12 columns">
@@ -34,7 +37,7 @@ const App = (props) => {
               {/* <h3>Please review your payment information before subitting</h3> */}
           </div>
 
-          <div id="payment-inputs" className="large-12 columns">
+          <div id="paymentInputs" className="large-12 columns">
             <div className="row">
                       <div id="paymentInput" className="small-12 large-2 end right">
                             <div id="currentBalance">
@@ -160,7 +163,7 @@ const App = (props) => {
 
           </div>
 
-          <div id="payment-review" className="large-12 columns">
+          <div id="paymentReview" className="large-12 columns">
             <div className="row">
               <div className="large-8 columns">
                   <dl className="reviewDetails">
@@ -194,10 +197,12 @@ const App = (props) => {
           </div>
 
         </div>
-      </div>
-    </form>
 
-    <Button hasError={props.hasError} onClick={() => props.onCreateToken()} />
+        <Button hasError={props.hasError} onClick={() => props.onCreateToken()} />
+
+      </div>
+
+    </form>
 
     </div>
   );
