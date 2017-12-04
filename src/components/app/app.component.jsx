@@ -24,31 +24,27 @@ const App = (props) => {
         <div id="paymentInfo" className="large-12 column">
           <div id="feedback"></div>
           <div className="row">
-            <div id="paymentTitle" className="large-10 columns">
+            <div id="paymentTitle" className="large-12 columns">
                 <span className="fa-stack fa-2x">
                     <span className="fa fa-square fa-stack-2x"></span>
                     <span className="fa fa-lock fa-stack-1x fa-inverse"></span>
+                    {/* <span className="fa fa-thumbs-up fa-stack-1x fa-inverse"></span> */}
                 </span>
                 <h3>Secure Payment</h3>
-            </div>
-            <div id="paymentInput" className="large-2 columns">
-                <div id="currentBalance">
-                    <strong>Current Balance</strong><div>$0.00</div>
-                </div>
-                <Label htmlFor="PaymentAmount" text="Payment Amount" />
-                <input id="PaymentAmount" name="PaymentAmount" type="number" placeholder="" className="form-control"/>
-            </div>
-            <div id="reviewTitle" className="large-12 columns">
-                <span className="fa-stack fa-2x">
-                    <span className="fa fa-square fa-stack-2x"></span>
-                    <span className="fa fa-thumbs-up fa-stack-1x fa-inverse"></span>
-                </span>
-                <h3>Please review your payment information before subitting</h3>
+                {/* <h3>Please review your payment information before subitting</h3> */}
             </div>
           </div>
 
           <div id="payment-inputs" className="large-12 columns">
-
+            <div className="row">
+                      <div id="paymentInput" className="small-12 large-2 end right">
+                            <div id="currentBalance">
+                                <strong>Current Balance</strong><div>$0.00</div>
+                            </div>
+                            <Label htmlFor="PaymentAmount" text="Payment Amount" />
+                            <input id="PaymentAmount" name="PaymentAmount" type="number" placeholder="" className="form-control"/>
+                        </div>
+            </div>
             <div className="row">
               <div id="cardInfo" className="large-6 column vertHr-right">
 
