@@ -9,8 +9,7 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 After installing [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/), open Command Prompt or Powershell session and...
 
 ``` bash
-# Navigate to your the directory you store your projects and clone this repository
-git clone http://zero.boardwalk.ad:8080/tfs/scrum/MemberExperience/_git/Bwalk.OnlinePayment.App
+
 
 # Go into the repository
 cd Bwalk.OnlinePayment.App
